@@ -1,0 +1,21 @@
+{
+  "name": "appdozero1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "proxy": "node proxy.js",
+    "local-proxy": "lcp --proxyUrl http://lnl-s4h.opustech.com.br:8000/sap/opu/odata/sap/ZLOJA_SRV/"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@ui5/cli": "^2.10.2",
+    "cors-anywhere": "^0.4.1",
+    "local-cors-proxy": "^1.0.2",
+    "http-proxy": "^1.17.0",
+    "express": "latest"
+  }
+}

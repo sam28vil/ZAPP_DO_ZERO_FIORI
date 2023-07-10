@@ -1,0 +1,20 @@
+<core:FragmentDefinition
+   xmlns="sap.m"
+   xmlns:core="sap.ui.core" >
+
+  <List
+        headerText="Lista de Funcionarios Dinamica"
+        growing="true"
+		    growingThreshold="4"
+		    growingScrollToLoad="false"
+        class="sapUiResponsiveMargin"
+        width="auto"
+        items="{
+            path: 'empregados>/Funcionarios',
+            factory: '.empregadosListFactory'
+            }" >
+        
+   </List>
+
+
+</core:FragmentDefinition> 

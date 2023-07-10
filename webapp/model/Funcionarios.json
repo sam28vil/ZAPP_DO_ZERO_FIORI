@@ -1,0 +1,22 @@
+{
+
+    "Funcionarios" : [
+        {
+            "nome": "Steven",
+            "sobrenome": "Job",
+            "habilitado": true
+        },
+        {
+            "nome": "Burt",
+            "sobrenome": "Preynolds",
+            "habilitado": false
+        },
+        {
+            "nome": "Maiqe",
+            "sobrenome": "Taison",
+            "habilitado": true
+        }
+
+    ]
+
+}

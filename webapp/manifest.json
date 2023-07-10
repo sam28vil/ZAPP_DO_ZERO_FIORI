@@ -1,0 +1,60 @@
+{
+    "_version": "1.12.0",
+    "sap.app": {
+      "id": "fiorinet.template",
+      "type": "application",
+      "i18n": "i18n/i18n.properties",
+      "title": "{{appTitle}}",
+      "description": "{{appDescription}}",
+      "applicationVersion": {
+        "version": "1.0.0"
+      },
+      "dataSources": {
+        "lojaRemote": {
+          "uri": "/sap/opu/odata/sap/ZMONITORVENDAS_SRV/",
+          "type": "OData",
+          "settings": {
+          "odataVersion": "2.0"
+          }
+        }
+      }  
+    },
+    "sap.ui": {
+      "technology": "UI5",
+      "deviceTypes": {
+          "desktop": true,
+          "tablet": true,
+          "phone": true
+      }
+    },
+    "sap.ui5": {
+      "rootView": {
+          "viewName": "fiorinet.template.view.App",
+          "type": "XML",
+          "async": true,
+          "id": "app"
+      },
+      "dependencies": {
+        "minUI5Version": "1.60",
+        "libs": {
+          "sap.m": {}
+        }      
+    },
+    "models" : {
+      "empregados" : {
+        "type": "sap.ui.model.json.JSONModel",
+		    "uri": "model/Funcionarios.json"
+      },
+      "i18n": {
+        "type": "sap.ui.model.resource.ResourceModel",
+        "settings": {
+          "bundleName": "fiorinet.template.i18n.i18n"
+        }
+      },
+      "": {
+        "dataSource": "lojaRemote"
+        }
+    }
+  
+  }
+}

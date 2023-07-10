@@ -1,0 +1,6 @@
+{
+    "sap" : {
+        "target" : "http://lnl-s4h.opustech.com.br:8000/",
+        "auth" : "cmarques:sap123"
+    }
+}
